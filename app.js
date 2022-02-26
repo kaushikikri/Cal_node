@@ -48,5 +48,5 @@ app.get('/hs', (req, res) => {
 
 
 app.listen(4000, (res) => {
-    console.log('Connected at port 4000');
+    console.log('At port 4000');
 });
