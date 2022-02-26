@@ -1,17 +1,7 @@
-const { create, evaluateDependencies } = require('mathjs');
+const math = require('mathjs');
 const express = require('express');
 const bodyparse = require('body-parser');
 const app = express();
-
-const add = (a, b) => a + b;
-const subtract = (a, b) => a - b;
-const multiply = (a, b) => a * b;
-const divide = (a, b) => a / b;
-const mod = (a, b) => a % b;
-
-const math = create(evaluateDependencies);
-math.import({ add, subtract, multiply, divide, mod }, { override: true });
-
 
 // connecting to db
 const client = require('./db');
